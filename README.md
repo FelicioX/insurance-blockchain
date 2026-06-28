@@ -18,7 +18,7 @@ The screenshots below show the official Insurance Core desktop wallet.
 
 ### Deposit / Withdraw Integration
 
-<img width="1365" height="732" alt="image" src="https://github.com/user-attachments/assets/a5217089-ea41-4095-8b3a-b54ac4f06401" />
+<img width="1362" height="667" alt="image" src="https://github.com/user-attachments/assets/175e3b4d-c6ea-436b-84d6-3c425e29d097" />
 
 ---
 
