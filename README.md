@@ -1,24 +1,141 @@
-Insurance Core integration/staging repository
-=================================================
-[![Build Status](https://travis-ci.org/laurobeleche/Ensurance.svg?branch=master)](https://travis-ci.org/laurobeleche/Ensurance)
+# Insurance Core
 
-Insurance (SEC) is a sustainable cryptocurrency modeled after Satoshi Nakamoto’s vision for Bitcoin. It is a decentralized, peer-to-peer transactional currency designed to offer a solution to the problem posed by the exponential increase in energy consumed by Bitcoin and other proof-of-work currencies. Proof-of-work mining is environmentally unsustainable due to the electricity used by high-powered mining hardware. Insurance utilizes an energy efficient proof-of-stake algorithm, can be mined on any computer, and will never require specialized mining equipment.
+Insurance Core is the reference implementation of the **Insurance (SEC)** blockchain.
 
-- Fast transactions featuring guaranteed zero confirmation transactions, we call it _SwiftTX_.
-- Decentralized blockchain voting providing for consensus based advancement of the current Masternode
-  technology used to secure the network and provide the above features, each Masternode is secured
-  with a collateral of 1,000 SEC.
+Insurance is a decentralized cryptocurrency focused on fast, secure and energy-efficient digital payments. Built on a hybrid **Proof of Work (PoW)** and **Proof of Stake (PoS)** consensus model with **Masternode** support, the project was designed to provide a scalable blockchain network while significantly reducing the energy consumption associated with traditional Proof of Work cryptocurrencies.
 
-### Coin Specs
+The network also includes **SwiftTX** instant transactions, decentralized governance and a distributed masternode infrastructure.
 
-|                             |                 |
-|-----------------------------|-----------------|
-| Block Time                  | 90 Seconds      |
-| Premine                     | 105,000 SEC     |
-| MAX Supply                  | 7,000,000 SEC   |
+---
 
-### Reward Distribution
+# 🖥 Desktop Wallet
 
-| **Block Height**  | **Reward** | **Masternodes**  | **PoS**          |
-|-------------------|------------|------------------|------------------|
-| 2-....            | 1 SEC      | 90% (0.9 SEC)    | 10% (0.1 SEC)    |
+The screenshots below show the official Insurance Core desktop wallet.
+
+### Wallet Overview
+
+<img width="1366" height="768" alt="wallet Sec 24-06" src="https://github.com/user-attachments/assets/c7a73bf6-87ca-4dc3-bbb5-3963673e8f68" />
+
+### Deposit / Exchange Integration
+
+<img width="1365" height="732" alt="image" src="https://github.com/user-attachments/assets/a5217089-ea41-4095-8b3a-b54ac4f06401" />
+
+---
+
+# 🚀 Features
+
+- Hybrid Proof of Work / Proof of Stake consensus
+- Masternode network
+- SwiftTX instant transactions
+- Desktop Wallet (Qt)
+- Wallet encryption
+- Blockchain synchronization
+- Peer-to-peer network
+- JSON-RPC interface
+- Staking support
+- Coin Control
+- Transaction history
+- Address book
+- Wallet backup and recovery
+
+---
+
+# 📊 Coin Specifications
+
+| Parameter | Value |
+|-----------|-------|
+| Coin Name | Insurance |
+| Ticker | SEC |
+| Algorithm | Quark |
+| Consensus | PoS + Masternodes |
+| Block Time | 90 Seconds |
+| Max Supply | 7,000,000 SEC |
+| Premine | 105,000 SEC (1.5%) |
+| Masternode Collateral | 1,000 SEC |
+| Masternode Reward | 90% |
+| Proof of Stake Reward | 10% |
+| Blocks per Day | 960 |
+| Maturity | 24 Hours |
+
+---
+
+# 💰 Reward Distribution
+
+| Block Height | Reward | Masternode | PoS |
+|--------------|---------|------------|-----|
+| 2 → ∞ | 1 SEC | 90% (0.9 SEC) | 10% (0.1 SEC) |
+
+---
+
+# 🛠 Build Dependencies
+
+The project is based on the Bitcoin/Dash codebase and requires the standard development libraries used for building cryptocurrency wallets.
+
+Typical dependencies include:
+
+- C++
+- Qt
+- Berkeley DB
+- Boost
+- OpenSSL
+- MiniUPnPc
+- LevelDB
+- Protobuf
+
+---
+
+# 🌐 Network Features
+
+- Decentralized blockchain
+- Peer-to-peer communication
+- Masternode support
+- Wallet encryption
+- Instant transaction propagation
+- Blockchain synchronization
+- RPC interface
+- Staking
+- Network governance
+
+---
+
+# 📂 Repository Structure
+
+```
+src/            Core blockchain source code
+doc/            Documentation
+share/          Shared resources
+depends/        Build dependencies
+contrib/        Development utilities
+```
+
+---
+
+# ⚙ Build
+
+```bash
+git clone https://github.com/FelicioX/insurance-blockchain.git
+
+cd insurance-blockchain
+
+mkdir build
+
+cd build
+
+cmake ..
+
+make -j$(nproc)
+```
+
+---
+
+# 📜 Historical Note
+
+Insurance Core represents an independent blockchain project developed using the Bitcoin/Dash architecture.
+
+This repository has been preserved as part of my software engineering portfolio to demonstrate experience with blockchain development, cryptocurrency infrastructure, desktop wallet applications and masternode technology.
+
+---
+
+# 📄 License
+
+Distributed under the MIT License.
